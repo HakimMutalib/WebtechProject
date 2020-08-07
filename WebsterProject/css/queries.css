@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1200px) {
+  .heading-main-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .text-lines {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  .heading-main-box,
+  .row {
+    padding: 0 4%;
+  }
+  /* .main-nav {
+    display: none;
+  } */
+  .text-lines {
+    width: 100%;
+    margin-left: 0%;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+}

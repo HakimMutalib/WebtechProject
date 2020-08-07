@@ -1,0 +1,246 @@
+
+/*********************************************************/
+/*  HEADER */
+/*********************************************************/
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+
+
+.logo {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.cta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  width: 500px;
+  margin: 80px auto 0;
+}
+
+.wrapper .accordian_wrap .accordian_header{
+  width: 100%;
+  height: 50px;
+  background: #5495ED;
+  padding: 15px;
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .accordian_wrap:first-child .accordian_header{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.wrapper .accordian_wrap:last-child .accordian_header{
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 2px solid tranparent;
+}
+
+.wrapper .accordian_wrap .accordian_header:hover{
+  color: #fff;
+  border-color: #fff;
+}
+
+.wrapper .accordian_wrap .accordian_header::before,
+.wrapper .accordian_wrap .accordian_header::after{
+  background: #fff;
+}
+
+.wrapper .accordian_wrap:last-child .accordian_header:hover{
+  border-bottom: 2px; solid transparent;
+}
+
+.wrapper .accordian_wrap .accordian_header::before,
+.wrapper .accordian_wrap .accordian_header::after{
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 2px;
+  background: #AFDCF9;
+}
+
+.wrapper .accordian_wrap .accordian_header::after{
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
+}
+
+.wrapper .accordian_wrap .accordian_body{
+  width: 100%;
+  height: 0px;
+  transition: all 0.5s ease;
+  background: #AFDCF9;
+  overflow: hidden;
+}
+
+.wrapper .accordian_wrap .accordian_body p{
+  padding: 15px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000;
+}
+
+.wrapper .accordian_wrap .accordian_header.active{
+  color: #fff;
+  border-color: #5495ED;
+}
+
+.wrapper .accordian_wrap:last-child .accordian_header.active{
+  border-bottom: 2px solid #5495ED;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.wrapper .accordian_wrap .accordian_header::before,
+.wrapper .accordian_wrap .accordian_header::after{
+  background: #fff;
+}
+
+.wrapper .accordian_wrap .accordian_header.active::after{
+  transform: rotate(0);
+}
+
+.wrapper .accordian_wrap .accordian_header.active + .accordian_body{
+  height: 180px;
+}
+
+.footer {
+width: 98.8vw;
+display: block;
+overflow: hidden;
+padding: 20px;
+box-sizing: border-box;
+background-color: White;
+}
+.inner_footer{
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+.inner_footer .logo_container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+.inner_footer .footer_third{
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.inner_footer .footer_third : last-child{
+  margin-right: 0;
+
+}
+
+.inner_footer .logo_container .logo{
+  width: 150px;
+  height: 180px;
+}
+.social{
+  font-size: 200%;
+  margin-right:20px ;
+}
+.inner_footer .footer_third h1{
+  font-family: 'montserrat';
+  font-size: 22px;
+  color: Black;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bolder;
+
+}
+
+.inner_footer .footer_third a{
+  font-family:"Domine", serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: Black;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.inner_footer .footer_third li{
+display: inline-block;
+padding: 0px;
+font-size: 20px
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .footer .inner_footer .footer_third {
+      display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+    }
+
+
+
+
+
+}
